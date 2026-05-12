@@ -11,8 +11,8 @@
     .card { background: #fff; border-radius: 8px; width: 100%; max-width: 800px; margin: 0 auto; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
     .nav-inner {   justify-content: center; display: flex; padding: 0 16px; border-bottom: 1px solid #f0f0f0; }
     .nav-inner a { display: block; font-size: 16px; font-weight: 300; color: #546e7a; text-decoration: none; padding: 13px 25px; letter-spacing: 0.02em; transition: color 0.15s; }
-    .nav-inner a:hover { color: #1a237e;}
-    .nav-inner a.active { color: #1a237e; font-weight: 600; }
+    .nav-inner a:hover { color: #1565c0;}
+    .nav-inner a.active { color: black; font-weight: 600; }
     .accent-bar { height: 16px; background: linear-gradient(90deg, #3c4e9b, #0bc8bf); position: relative; }
     .accent-bar::after { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.25) 1px, transparent 1px); background-size: 5px 5px; }
     .card-body { padding: 36px 40px 32px; }
@@ -52,30 +52,22 @@
       .nav-inner a.CVbig  { display: none; }
       .nav-inner a.CVsmall { display: block; }
       .nav-toggle { display: block; }
-      .nav-inner { display: none; }
-      .nav-inner.open { display: block; }
+      .nav-inner { display: none !important; }
+      .nav-inner.open { display: block !important; }
     }
   </style>
 </head>
-<script>
-  const toggle = document.querySelector('.nav-toggle');
-  const navInner = document.querySelector('.nav-inner');
-  toggle.addEventListener('click', () => {
-    const isOpen = navInner.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', isOpen);
-    toggle.textContent = isOpen ? '✕ Close' : '☰ Menu';
-  });
-</script>
+
 <body>
   <div class="card">
     <nav>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰ Menu</button>
+      <center><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰ Menu</button>
       <div class="nav-inner">
         <a href="index.html" class="active">About</a>
         <a href="research.html">Research</a>
         <a href="software.html">Software</a>
         <a href="cv.html" class="CVbig">CV</a>
-        <a class="CVsmall" href="Carter_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        <center><a class="CVsmall" href="Carter_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></center>
       </div>
     </nav>
     <div class="accent-bar"></div>
@@ -97,5 +89,15 @@
     </div>
   </div>
         <br><br><center><img class="cubes"  src="CSS/cubes21.png" ></center><br><br><br>
+
+        <script>
+          const toggle = document.querySelector('.nav-toggle');
+          const navInner = document.querySelector('.nav-inner');
+          toggle.addEventListener('click', () => {
+            const isOpen = navInner.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', isOpen);
+            toggle.textContent = isOpen ? '✕ Close' : '☰ Menu';
+          });
+        </script>
 
 </body></html>
