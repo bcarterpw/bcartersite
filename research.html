@@ -8,9 +8,9 @@
     .card { background: #fff; border-radius: 8px; width: 100%; max-width: 800px; margin: 0 auto; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
     .nav-inner {   justify-content: center; display: flex; padding: 0 16px; border-bottom: 1px solid #f0f0f0; }
     .nav-inner a { display: block; font-size: 16px; font-weight: 300; color: #546e7a; text-decoration: none; padding: 13px 25px; letter-spacing: 0.02em; transition: color 0.15s; }
-    .nav-inner a:hover { color: #1565c0;}
+    .nav-inner a:hover { color: #2884cb;}
     .nav-inner a.active { color: black; font-weight: 600; }
-    .accent-bar { height: 25px; background: linear-gradient(90deg, #1565c0, #74de9a); position: relative; }
+    .accent-bar { height: 25px; background: linear-gradient(90deg, #2884cb, #74de9a); position: relative; }
     .accent-bar::after {  content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(255, 255, 255, 1) 0.01px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 1) 0.01px, transparent 1px);  background-size: 8px 8px;}
     .card-body { padding: 36px 40px 32px; }
     .about-layout { display: block; gap: 32px; align-items: flex-start; }
@@ -21,13 +21,13 @@
     .about-tagline { font-weight: 300;font-size: 16px; color: #37474f; line-height: 1.65; margin-bottom: 12px; }
     .about-bio { font-weight: 300;font-size: 16px; color: #37474f; line-height: 1.7; margin-bottom: 12px; }
     .about-bio:last-child { margin-bottom: 0; }
-    .about-bio a { color: #1565c0; text-decoration: none; }
+    .about-bio a { color: #2884cb; text-decoration: none; }
     .about-bio a:hover { text-decoration: underline; }
     .contact-bar { border-top: 1px solid #eceff1; padding: 14px 40px; font-size: 13px; color: #90a4ae; text-align: center; }
     .contact-row { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
     .contact-row:last-child { margin-bottom: 0; }
     .contact-bar strong { color: #607d8b; }
-    .contact-bar a { color: #1565c0; text-decoration: none; }
+    .contact-bar a { color: #2884cb; text-decoration: none; }
     .contact-bar a:hover { text-decoration: underline; }
     .social-icons { display: inline-flex; gap: 10px; align-items: center; }
     .social-icons a { display: inline-flex; opacity: 0.8; transition: opacity 0.15s; }
@@ -37,6 +37,8 @@
     .nav-inner a.CVsmall { display: none; }
     .cubes:hover{filter: brightness(1); -moz-transform: rotate(-180deg)  ; /* WebKit */  -webkit-transform:  rotate(-180deg) ; /* Opera */ -o-transform: rotate(-180deg) ;  /* Standard */  transform: rotate(-180deg);}
     .nav-toggle {  display: none;  width: 100%;  padding: 12px 16px;  background: none;  border: none;  border-bottom: 1px solid #f0f0f0;  font-size: 15px;  color: #000000;  text-align: left;  cursor: pointer;}
+    .track-heading { text-align:center; font-weight:600; font-size:1.15em; color:black; font-family: Georgia, 'Times New Roman', serif; margin-top:6px; margin-bottom:4px; }
+    .subsection-heading { text-align:center; font-weight:600; font-size:0.92em; letter-spacing:0.04em; text-transform:uppercase; color:#1a1a1a; margin-top:32px; margin-bottom:2px; }
 
     @media (max-width: 600px) {
       body { padding: 16px 12px 40px; }
@@ -81,131 +83,151 @@
           <center><p  class="about-name">My Research</p></center><br>
           <p class="about-bio">
 
-          I investigate how people form opinions about health policy, social spending, and taxation. I also examine the effects of social policies on health outcomes across lines of race, geography, and socioeconomic status.
-Recently, I partnered with <a href ="https://ahealthierdemocracy.org/" style="color:black; font-weight: normal;" target="_blank" rel="noopener noreferrer">A Healthier Democracy</a></u> to study mobilization and civic engagement in health care settings affecting marginalized communities (<i>under review</i>). I am also currently working with <a href ="https://www.povertyactionlab.org/j-pal-north-america" style="color:black; font-weight: normal;" target="_blank" rel="noopener noreferrer">JPAL North America</a> to craft an RCT intervention that will assist low-income citizens in navigating new SNAP and Medicaid work requirements.  Below is a selection of my published research and current projects. <br><br><br>
+          How can we promote civic virtue? What do citizens owe their government and each other? And, what does the government owe its citizens in return? These questions have occupied philosophers from Plato and Aristotle to Hobbes, Locke, and Rousseau. In my research, I examine how ordinary Americans wrestle with these ancient questions in modern politics. <br><br>I use tools from survey research and behavioral economics to examine how people's political behavior and policy preferences are shaped by their cognitive biases, their moral convictions, their partisan identities, and their judgments of merit and desert. I also conduct policy analyses using quasi-experimental methods to study who actually receives the goods and protections of society, who is left out, and why. Together, these two tracks examine both the sources of policy support and the distribution of policy benefits.
 
-                              <center><p  class="about-name"><small> — Peer-Reviewed Publications —</small></p></center>
-    <div class="about-bio">
+          <br><br>
 
-                            <div>
-                              <ul style="list-style:none; ">
+          <center><p class="track-heading">—Current Projects—</p></center>
+      <div class="about-bio">
+        <ul style="list-style:disc; margin:0 0 0 22px; padding:0;">
+          <li style="padding:4px; line-height:1.5;">
+              <span style="font-weight:500;">Work Requirements</span>. Saftey-net programs like SNAP and Medicaid promote self-reliance by requiring that beneficiaries work each month. As an <b>ARTEMIS Fellow</b> at <a href="https://www.povertyactionlab.org/j-pal-north-america" style="color:#2884cb; font-weight: normal; text-decoration:underline;" target="_blank" rel="noopener noreferrer">J-PAL North America</a>, I'm designing a pilot study investigating why some people who meet the work requirements still lose their benefits.
+          </li></ul><ul style="list-style:disc; margin:0 0 0 22px; padding:0;">
+          <li style="padding:4px; line-height:1.5;">
+              <span style="font-weight:500;">Moral Conviction</span>. People become more politically active and ideologically polarized when they are <b><i>morally convicted</i></b> about an issue. For example, when one person or group does harm to another, people often consider this a matter of "right" and "wrong". Using a series of survey experiments, I am investigating whether becoming morally convicted depends on who was harmed (e.g., someone from my political party) and on who is blamed.<br>
+          </li>
+        </ul>
+        <ul style="list-style:disc; margin:0 0 0 22px; padding:0;">
+        <li style="padding:4px; line-height:1.5;">
+            <span style="font-weight:500;">The Burden of Taxes</span>. Using methods from experimental economics (see <a href="software.html">Software</a>), we provide a precise test of <b><i>the burden hypothesis</i></b> of redistribution preferences (for more, see Carter, B. et al, 2026). Here, we find that people with low income do not support redistribution when it is costly to do so, but removing these costs leads to more robust support, as rationality predicts.<br>
+        </li>
+      </ul>
+      </div>
 
-<li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-  <a target="_blank" href="publications/Carter_DelPonte_DeScioli_PoP-2026.pdf" style="font-size:1.22em; font-weight:500;">
-    Do Voters Understand the Benefits of Taxes?
-  </a><br>
-  <span style="font-weight:500;">Carter, B.</span>, Del Ponte, A., and DeScioli, P.<br>
-  <b><i>Perspectives on Politics</i>, 2026</b>
-</li>
+<br>
 
-<li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-  <a target="_blank" href="publications/Carteretal_JGIM2026_RacialConcordance.pdf" style="font-size:1.22em; font-weight:500;">
-    The Impact of Race and Physician–Patient Racial Concordance on the Incidence of Inpatient Advance Care Planning
-  </a><br>
-  <span style="font-weight:500;">Carter, B.</span>, Kaur-Gill, S., Murphy, M., O'Malley, J., and Barnato, A.<br>
-  <b><i>Journal of General Internal Medicine</i>, 2026</b>
-</li>
+          <center><p class="track-heading">—Manuscripts Under Review—</p></center>
+          <div class="about-bio">
+            <ul style="list-style:none;">
 
-<li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-  <a target="_blank" href="publications/Carter2025_JBPA.pdf" style="font-size:1.22em; font-weight:500;">
-    Does misunderstanding taxes inflate people's support for Medicare spending?
-  </a><br>
-  <span style="font-weight:500;">Carter, B.</span><br>
-  <b><i>Journal of Behavioral Public Administration</i>, 2025</b>
-</li>
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <span style="font-size:1.12em; font-weight:500;">
+                  Experimental Tests of the Merit Theory of Redistribution
+                </span><br>
+                <span style="font-weight:500;">Carter, B.</span> and DeScioli, P.<br>
+                <span style="font-style:italic; font-size:0.92em; color:#78909c;">Under Review at <b>American Political Science Review</b></span>
+              </li>
 
-<li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-  <a target="_blank" href="publications/Carter_Etal_JRH-2025.pdf" style="font-size:1.22em; font-weight:500;">
-    Impact of Medicaid Expansion on Stage of Diagnosis of Lung Cancer for Rural and Urban Patients in New Hampshire
-  </a><br>
-  <span style="font-weight:500;">Carter, B.</span>, Denny, J., and Loehrer, A.<br>
-  <b><i>Journal of Rural Health</i>, 2025</b>
-</li>
-
-<li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-  <a target="_blank" href="publications/Carlos_Etal_JUH-2024.pdf" style="font-size:1.22em; font-weight:500;">
-    Neighborhood Trajectories from Historic Redlining to the Area Deprivation Index
-  </a><br>
-  Carlos, H., Weiss, J., <span style="font-weight:500;">Carter, B.</span>, Akre, E., Diaz, A., and Loehrer, A.<br>
-  <b><i>Journal of Urban Health</i>, 2024</b>
-</li>
-
-<li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-  <a target="_blank" href="publications/Green_Carter_Loehrer_JAMA_Oncology_Viewpoint_2023.pdf" style="font-size:1.22em; font-weight:500;">
-    Examining Medicaid Waivers: An Opportunity to Promote Equity in Cancer Care
-  </a><br>
-  Green, L., <span style="font-weight:500;">Carter, B.</span>, and Loehrer, A.<br>
-  <b><i>Journal of the American Medical Association: Oncology</i>, 2024</b>
-</li>
-
-<li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-  <a target="_blank" href="publications/Loehrer_Etal_AOS-2024.pdf" style="font-size:1.22em; font-weight:500;">
-    Residential Redlining, Neighborhood Trajectory, and Equity of Breast and Colorectal Cancer Care
-  </a><br>
-  Loehrer, A., Weiss, J., Chatoorgoon, K., Bello, O., Hasson, R., Diaz, A., <span style="font-weight:500;">Carter, B.</span>, Delmont, M., Akre, E., and Carlos, H.<br>
-  <b><i>Annals of Surgery</i>, 2023</b>
-</li>
-
-<li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-  <a target="_blank" href="publications/Carter_Del_Ponte_BRM-2022.pdf" style="font-size:1.22em; font-weight:500;">
-    Integrating Web Applications into Popular Survey Platforms for Online Experiments
-  </a><br>
-  <span style="font-weight:500;">Carter, B.</span> and Del Ponte, A.<br>
-  <b><i>Behavior Research Methods</i>, 2022</b>
-</li>
-
-<li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-  <a target="_blank" href="publications/Barabas_Carter_Shan_APR-2020.pdf" style="font-size:1.22em; font-weight:500;">
-    Analogical Framing: How Policy Comparisons Alter Political Support for Health Care Reform
-  </a><br>
-  Barabas, J., <span style="font-weight:500;">Carter, B.</span>, and Shan, K.<br>
-  <b><i>American Politics Research</i>, 2020</b>
-</li>
-
-</ul>
-</div></div><br><br><br><br>
+              <li style="padding:4px; padding-top:16px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <span style="font-size:1.12em; font-weight:500;">
+                  What Mobilizes the Mobilizers? How Text and Email Messages Shape GOTV Efforts
+                </span><br>
+                <span style="font-weight:500;">Carter, B.</span>, Caton, C., Kernell, G., Martin, A., McCabe, K., McCann, J., and Singh, R.<br>
+                <span style="font-style:italic; font-size:0.92em; color:#78909c;">Under Review at <b>Political Behavior</b></span>
+              </li>
 
 
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <span style="font-size:1.12em; font-weight:500;">
+                  From Bipartisan to Partisan: How Elite Cues Override Aesthetic Intuition in Federal Architecture Preferences
+                </span><br>
+                Del Ponte, A., <span style="font-weight:500;">Carter, B.</span><br>
+                <span style="font-style:italic; font-size:0.92em; color:#78909c;">Under Review at <b>Public Opinion Quarterly</b></span>
+              </li>
 
-                      <center><p class="about-name"><small> — Manuscripts Under Review — </small></p></center>
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <span style="font-size:1.12em; font-weight:500;">
+                  Taxation Without Access: Deservingness Misperceptions and Support for Immigrant Health Insurance
+                </span><br>
+                Sawyer, M., <span style="font-weight:500;">Carter, B.</span><br>
+                <span style="font-style:italic; font-size:0.92em; color:#78909c;">Under Review at <b>Journal of Health Politics, Policy and Law</b></span>
+              </li>
 
-    <div class="about-bio">
-    <ul style="list-style:none;">
-      <li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-        <span style="font-size:1.22em; font-weight:500;">
-          Experimental Tests of the Merit Theory of Redistribution
-        </span><br>
-        <span style="font-weight:500;">Carter, B.</span> and DeScioli, P.
-      </li>
+            </ul>
+          </div>
 
-    <li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-      <span style="font-size:1.22em; font-weight:500;">
-        What Mobilizes the Mobilizers? How Text and Email Messages Shape GOTV Efforts
-      </span><br>
-      <span style="font-weight:500;">Carter, B.</span>, Caton, C., Kernell, G., Martin, A., McCabe, K., McCann, J., and Singh, R.
-    </li>
+          <br><br>
 
-    <li style="padding:6px; padding-top:30px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-      <span style="font-size:1.22em; font-weight:500;">
-        From Bipartisan to Partisan: How Elite Cues Override Aesthetic Intuition in Federal Architecture Preferences
-      </span><br>
-      Del Ponte, A., <span style="font-weight:500;">Carter, B.</span>
-    </li>
+          <center><p class="track-heading">—Peer-Reviewed Publications—</p></center>
+          <div class="about-bio">
+            <ul style="list-style:none;">
 
-    <li style="padding:6px; padding-top:34px; padding-right:4px; line-height:1.65; list-style-position:outside;">
-      <span style="font-size:1.22em; font-weight:500;">
-        Taxation Without Access: Deservingness Misperceptions and Support for Immigrant Health Insurance
-      </span><br>
-      Sawyer, M., <span style="font-weight:500;">Carter, B.</span>
-    </li>
+              <li style="padding:4px; padding-top:16px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <a target="_blank" href="publications/Carter_DelPonte_DeScioli_PoP-2026.pdf" style="font-size:1.22em; font-weight:500;">
+                  Do Voters Understand the Benefits of Taxes?
+                </a><br>
+                <span style="font-weight:500;">Carter, B.</span>, Del Ponte, A., and DeScioli, P.<br>
+                <b><i>Perspectives on Politics</i>, 2026</b>
+              </li>
 
-    </ul>
-    </div>
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <a target="_blank" href="publications/Carteretal_JGIM2026_RacialConcordance.pdf" style="font-size:1.22em; font-weight:500;">
+                  The Impact of Race and Physician–Patient Racial Concordance on the Incidence of Inpatient Advance Care Planning
+                </a><br>
+                <span style="font-weight:500;">Carter, B.</span>, Kaur-Gill, S., Murphy, M., O'Malley, J., and Barnato, A.<br>
+                <b><i>Journal of General Internal Medicine</i>, 2026</b>
+              </li>
 
-    <br><br><br>
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <a target="_blank" href="publications/Carter2025_JBPA.pdf" style="font-size:1.22em; font-weight:500;">
+                  Does misunderstanding taxes inflate people's support for Medicare spending?
+                </a><br>
+                <span style="font-weight:500;">Carter, B.</span><br>
+                <b><i>Journal of Behavioral Public Administration</i>, 2025</b>
+              </li>
 
-  
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <a target="_blank" href="publications/Carter_Etal_JRH-2025.pdf" style="font-size:1.22em; font-weight:500;">
+                  Impact of Medicaid Expansion on Stage of Diagnosis of Lung Cancer for Rural and Urban Patients in New Hampshire
+                </a><br>
+                <span style="font-weight:500;">Carter, B.</span>, Denny, J., and Loehrer, A.<br>
+                <b><i>Journal of Rural Health</i>, 2025</b>
+              </li>
 
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <a target="_blank" href="publications/Carlos_Etal_JUH-2024.pdf" style="font-size:1.22em; font-weight:500;">
+                  Neighborhood Trajectories from Historic Redlining to the Area Deprivation Index
+                </a><br>
+                Carlos, H., Weiss, J., <span style="font-weight:500;">Carter, B.</span>, Akre, E., Diaz, A., and Loehrer, A.<br>
+                <b><i>Journal of Urban Health</i>, 2024</b>
+              </li>
+
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <a target="_blank" href="publications/Green_Carter_Loehrer_JAMA_Oncology_Viewpoint_2023.pdf" style="font-size:1.22em; font-weight:500;">
+                  Examining Medicaid Waivers: An Opportunity to Promote Equity in Cancer Care
+                </a><br>
+                Green, L., <span style="font-weight:500;">Carter, B.</span>, and Loehrer, A.<br>
+                <b><i>Journal of the American Medical Association: Oncology</i>, 2024</b>
+              </li>
+
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <a target="_blank" href="publications/Loehrer_Etal_AOS-2024.pdf" style="font-size:1.22em; font-weight:500;">
+                  Residential Redlining, Neighborhood Trajectory, and Equity of Breast and Colorectal Cancer Care
+                </a><br>
+                Loehrer, A., Weiss, J., Chatoorgoon, K., Bello, O., Hasson, R., Diaz, A., <span style="font-weight:500;">Carter, B.</span>, Delmont, M., Akre, E., and Carlos, H.<br>
+                <b><i>Annals of Surgery</i>, 2023</b>
+              </li>
+
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <a target="_blank" href="publications/Carter_Del_Ponte_BRM-2022.pdf" style="font-size:1.22em; font-weight:500;">
+                  Integrating Web Applications into Popular Survey Platforms for Online Experiments
+                </a><br>
+                <span style="font-weight:500;">Carter, B.</span> and Del Ponte, A.<br>
+                <b><i>Behavior Research Methods</i>, 2022</b>
+              </li>
+
+              <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
+                <a target="_blank" href="publications/Barabas_Carter_Shan_APR-2020.pdf" style="font-size:1.22em; font-weight:500;">
+                  Analogical Framing: How Policy Comparisons Alter Political Support for Health Care Reform
+                </a><br>
+                Barabas, J., <span style="font-weight:500;">Carter, B.</span>, and Shan, K.<br>
+                <b><i>American Politics Research</i>, 2020</b>
+              </li>
+
+            </ul>
+          </div>
+
+      <br>
 
           </div>
         </div>
