@@ -2,6 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Benjamin Carter, Ph.D.</title>
+  <script type='text/javascript' src='https://embed.altmetric.com/assets/embed.js'></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: #f2f0e2; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; color: #37474f; padding: 28px 20px 60px; }
@@ -39,28 +40,34 @@
     .nav-toggle {  display: none;  width: 100%;  padding: 12px 16px;  background: none;  border: none;  border-bottom: 1px solid #f0f0f0;  font-size: 15px;  color: #000000;  text-align: left;  cursor: pointer;}
     .track-heading { text-align:center; font-weight:600; font-size:1.15em; color:black; font-family: Georgia, 'Times New Roman', serif; margin-top:6px; margin-bottom:4px; }
     .subsection-heading { text-align:center; font-weight:600; font-size:0.92em; letter-spacing:0.04em; text-transform:uppercase; color:#1a1a1a; margin-top:32px; margin-bottom:2px; }
+    .project-list { list-style:disc; margin:10px 0 0 12px; padding:0; }
+    .project-list li { padding:4px; line-height:1.65; margin-bottom:6px; }
+    .project-title { font-weight:600; }
+    .project-list details summary { cursor:pointer; list-style:none; }
+    .project-list details summary::-webkit-details-marker { display:none; }
+    .project-list details summary::after { content:' +'; color:#2884cb; font-weight:600; }
+    .project-list details[open] summary::after { content:' \2212'; }
+    .project-list details summary:hover .project-title { color:#2884cb; }
+    .project-detail { margin:6px 0 4px 0; padding:8px 12px; background:#f7f8fa; border-left:3px solid #2884cb; border-radius:3px; font-size:15px; line-height:1.6; }
 
     @media (max-width: 600px) {
       body { padding: 16px 12px 40px; }
       .card-body { padding: 24px 20px 20px; }
-      .about-layout { flex-direction: column; }
- .about-layout { flex-direction: column; align-items: center; }
+      .about-layout { flex-direction: column; align-items: center; }
       .about-photo {   min-width: 90px;  height:inherit; }
       .about-role { white-space: normal; }
       .contact-bar { padding: 14px 20px; }
       .nav-inner {   justify-content: center; display: block; padding: 0 16px; border-bottom: 1px solid #f0f0f0; }
       .nav-inner a { display:flex;justify-content: center; font-size: 16px; font-weight: 300; color: #546e7a; text-decoration: none; padding: 10px 0px; letter-spacing: 0.02em; transition: color 0.15s; }
 
-
       .nav-inner a.CVbig  { display: none; }
       .nav-inner a.CVsmall { display: block; }
       .nav-toggle { display: block; }
       .nav-inner { display: none !important; }
       .nav-inner.open { display: block !important; }
-          .accent-bar { height: 25px;}
+      .accent-bar { height: 25px;}
       .contactPeriod{display:none;}
-
-    }}
+    }
   </style>
 </head>
 <body>
@@ -74,37 +81,58 @@
         <a href="cv.html" class="CVbig">CV</a>
         <center><a class="CVsmall" href="Carter_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></center>
       </div>
+      </center>
     </nav>
     <div class="accent-bar"></div>
     <div class="card-body">
       <div class="about-layout">
-        <div class ="about-photo-center">
+        <div class="about-photo-center">
         <div class="about-info">
-          <center><p  class="about-name">My Research</p></center><br>
-          <p class="about-bio">
+          <center><p class="about-name">My Research</p></center><br>
 
-        What is the proper role of government in a good society? I study how the American public wrestles with this ancient question in modern politics. Americans answer in strikingly different ways depending on their moral convictions, perceived self-interest, partisan loyalties, and their beliefs about the world. Government responds through policy, and those policies determine how society's benefits and burdens are distributed. I use survey experiments, field experiments, behavioral economics, and policy analysis to investigate how citizens think and vote, which policies pass, and ultimately how those policies affect ordinary people's lives.
-          <br><br>
+          <p class="about-bio">
+            My research has two goals that reinforce each other: measuring how public policies affect people's lives, and understanding how citizens judge those policies. A policy can fail when eligible people misunderstand its rules, and a policy that works can lose support when voters misperceive its costs. Using field experiments, survey experiments, and policy analysis, I produce evidence that policymakers and practitioners can use.
+          </p>
+          <br>
 
           <center><p class="track-heading">— Current Projects —</p></center>
-      <div class="about-bio">
-        <ul style="list-style:disc; margin:10px 0 0 12px; padding:0;">
-        <li style="padding:4px; line-height:1.65;">
-            <span style="font-weight:600;">The Burden of Taxes.</span> Using methods from <a href="software.html">experimental economics</a>, we test <i>the burden hypothesis</i> of redistribution preferences from earlier work (Carter et al, 2026). We find that people with low income vote for less redistribution when they must pay taxes to receive benefits. Removing the tax burden while keeping net benefits the same leads to robust support for redistribution among the poor, as rationality predicts.
-      </ul>
-      <ul style="list-style:disc; margin:10px 0 0 12px; padding:0;">
-        <li style="padding:4px; line-height:1.65;">
-            <span style="font-weight:600;">Work Requirements.</span> Safety-net programs like SNAP and Medicaid aim to promote self-reliance by requiring that beneficiaries work each month. As an <b>ARTEMIS Fellow</b>, I am working with <a href="https://www.povertyactionlab.org/j-pal-north-america" style="color:#2884cb;" target="_blank" rel="noopener noreferrer">J-PAL North America</a> to craft a Randomized Controlled Trial (RCT) to identify why some citizens who meet the work requirements still lose their benefits.
-        </li></ul>
-      <ul style="list-style:disc; margin:10px 0 0 12px; padding:0;">
-      <li style="padding:4px; line-height:1.65;">
-<span style="font-weight:600;">Moral Conviction.</span> People become more politically active and resistant to compromise when they feel morally convicted about an issue. For example, people often view harm done to others as a matter of "right" and "wrong". Using a series of survey experiments, I investigate how people's moral conviction and political behavior depends on who has been harmed (e.g., an ally, enemy, criminal, or victim), and who has been blamed.<br>      </li>
-    </ul>
+          <div class="about-bio">
 
+            <p class="subsection-heading">How Policies Affect People</p>
+            <ul class="project-list">
+              <li>
+                <details>
+                  <summary><span class="project-title">Work Requirements.</span> Why do people who meet Medicaid work requirements still dropped from the program?</summary>
+                  <p class="project-detail">As an <b>ARTEMIS Fellow</b> with <a href="https://www.povertyactionlab.org/j-pal-north-america" target="_blank" rel="noopener noreferrer">J-PAL North America</a>, I am designing an assessment study and randomized controlled trial that separates Medicaid enrollees who are not working from those who lose coverage to paperwork or confusion about the rules. The study can guide agencies on how to maintain patient coverage and avoid costly enrollee churn.</p>
+                </details>
+              </li>
+            </ul>
 
-      </div>
+            <p class="subsection-heading">How Citizens Judge Policies</p>
+            <ul class="project-list">
+              <li>
+                <details>
+                  <summary><span class="project-title">The Burden of Taxes.</span> Does paying taxes turn the poor against policies that help them?</summary>
+                  <p class="project-detail">Using <a href="software.html">economic experiments</a>, we find that people with low income vote for less redistribution when they must pay taxes to receive benefits. Removing that burden while holding net benefits constant produces robust support, as rationality predicts. A policy's design shapes whether it keeps the support of the people it helps.</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary><span class="project-title">Rising Premiums.</span> Whom do ACA Marketplace enrollees blame when their premiums go up?</summary>
+                  <p class="project-detail">Using KFF panel data, I find that enrollees often assign blame by partisanship rather than by which officials made the decision. A follow-up study links survey responses to validated voter turnout in the 2026 midterms to test whether harm and blame change who votes.</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary><span class="project-title">Moral Conviction.</span> When does harm make compromise harder?</summary>
+                  <p class="project-detail">People become more politically active and less willing to compromise when they see an issue as a matter of right and wrong. In survey experiments, I test how conviction depends on who was harmed (an ally, an opponent, a criminal, or a victim) and who is blamed.</p>
+                </details>
+              </li>
+            </ul>
 
-<br>
+          </div>
+
+          <br>
 
           <center><p class="track-heading">— Manuscripts Under Review —</p></center>
           <div class="about-bio">
@@ -115,7 +143,8 @@
                   Experimental Tests of the Merit Theory of Redistribution
                 </span><br>
                 <span style="font-weight:500;">Carter, B.</span> and DeScioli, P.<br>
-              </li><li style="margin-left: 40px;color:#2884cb; margin-bottom:8px;list-style:disc"> Invited by editor to revise and resubmit at <i>American Political Science Review</i>.
+              </li>
+              <li style="margin-left: 40px;color:#2884cb; margin-bottom:8px;list-style:disc"> Invited by editor to revise and resubmit at <i>American Political Science Review</i>.
               </li>
 
               <li style="padding:4px; padding-top:16px; padding-right:4px; line-height:1.5; list-style-position:outside;">
@@ -124,7 +153,6 @@
                 </span><br>
                 <span style="font-weight:500;">Carter, B.</span>, Caton, C., Kernell, G., Martin, A., McCabe, K., McCann, J., and Singh, R.<br>
               </li>
-
 
               <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
                 <span style="font-size:1.12em; font-weight:500;">
@@ -154,7 +182,7 @@
                   Do Voters Understand the Benefits of Taxes?
                 </a><br>
                 <span style="font-weight:500;">Carter, B.</span>, Del Ponte, A., and DeScioli, P.<br>
-                <b><i>Perspectives on Politics</i>, 2026</b>
+                <b><i>Perspectives on Politics</i>, 2026</b> <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1017/S153759272610512X"></div>
               </li>
 
               <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
@@ -162,7 +190,7 @@
                   The Impact of Race and Physician–Patient Racial Concordance on the Incidence of Inpatient Advance Care Planning
                 </a><br>
                 <span style="font-weight:500;">Carter, B.</span>, Kaur-Gill, S., Murphy, M., O'Malley, J., and Barnato, A.<br>
-                <b><i>Journal of General Internal Medicine</i>, 2026</b>
+                <b><i>Journal of General Internal Medicine</i>, 2026</b> <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1007/s11606-026-10231-x"></div>
               </li>
 
               <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
@@ -170,7 +198,7 @@
                   Does misunderstanding taxes inflate people's support for Medicare spending?
                 </a><br>
                 <span style="font-weight:500;">Carter, B.</span><br>
-                <b><i>Journal of Behavioral Public Administration</i>, 2025</b>
+                <b><i>Journal of Behavioral Public Administration</i>, 2025</b> <div class='altmetric-embed' data-badge-type='donut' data-doi="10.30636/jbpa.81.356"></div><span class="__dimensions_badge_embed__" data-doi="10.30636/jbpa.81.356" data-style="small_circle"></span>
               </li>
 
               <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
@@ -178,7 +206,7 @@
                   Impact of Medicaid Expansion on Stage of Diagnosis of Lung Cancer for Rural and Urban Patients in New Hampshire
                 </a><br>
                 <span style="font-weight:500;">Carter, B.</span>, Denny, J., and Loehrer, A.<br>
-                <b><i>Journal of Rural Health</i>, 2025</b>
+                <b><i>Journal of Rural Health</i>, 2025</b><div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/jrh.70001"></div><span class="__dimensions_badge_embed__" data-doi="10.1111/jrh.70001" data-style="small_circle"></span>
               </li>
 
               <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
@@ -202,7 +230,7 @@
                   Residential Redlining, Neighborhood Trajectory, and Equity of Breast and Colorectal Cancer Care
                 </a><br>
                 Loehrer, A., Weiss, J., Chatoorgoon, K., Bello, O., Hasson, R., Diaz, A., <span style="font-weight:500;">Carter, B.</span>, Delmont, M., Akre, E., and Carlos, H.<br>
-                <b><i>Annals of Surgery</i>, 2023</b>
+                <b><i>Annals of Surgery</i>, 2023</b> <span class="__dimensions_badge_embed__" data-doi="10.1097/SLA.0000000000006156"></span>
               </li>
 
               <li style="padding:4px; padding-top:14px; padding-right:4px; line-height:1.5; list-style-position:outside;">
@@ -224,24 +252,25 @@
             </ul>
           </div>
 
-      <br>
+          <br>
 
-          </div>
+        </div>
         </div>
       </div>
     </div>
-
-
   </div>
-        <br><br><center><img class="cubes"  src="CSS/cubes21.png" ></center><br><br><br>
-        <script>
-          const toggle = document.querySelector('.nav-toggle');
-          const navInner = document.querySelector('.nav-inner');
-          toggle.addEventListener('click', () => {
-            const isOpen = navInner.classList.toggle('open');
-            toggle.setAttribute('aria-expanded', isOpen);
-            toggle.textContent = isOpen ? '✕ Close' : '☰ Menu';
-          });
-        </script>
+
+  <br><br><center><img class="cubes" src="CSS/cubes21.png"></center><br><br><br>
+
+  <script async src="https://badge.dimensions.ai/static/ai/badge.js" charset="utf-8"></script>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navInner = document.querySelector('.nav-inner');
+    toggle.addEventListener('click', () => {
+      const isOpen = navInner.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.textContent = isOpen ? '✕ Close' : '☰ Menu';
+    });
+  </script>
 
 </body></html>
